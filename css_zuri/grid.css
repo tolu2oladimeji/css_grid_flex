@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background-color:rgb(31, 29, 29);
+}
+main{
+    display:grid;
+    grid-template-areas: 
+    'first first first second second'
+    'first first first second second'
+    'third third fourth fourth fourth'
+    'third third fifth fifth fifth'
+    ;
+    gap: 10px;
+    background-color: rgb(10, 10, 39);
+    width: 70%;
+    height: 50%;
+    border-left: 20%;
+    /*justify-content: center;*/
+}
+main div{
+    padding:2em;
+    text-align:center;
+    
+}
+.one{
+    background-color: orangered;
+    grid-area: first;
+}
+.two{
+    background-color: orange;
+    grid-area: second;
+}
+.three{
+    background-color: green;
+    grid-area: third;
+}
+.four{
+    background-color: turquoise;
+    grid-area: fourth;
+}
+.five{
+    background-color: turquoise;
+    grid-area: fifth;
+}
